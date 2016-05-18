@@ -22,15 +22,16 @@ var metadata = {
  * Config
  */
 module.exports = {
-  // static data for index.html
   metadata: metadata,
-  // for faster builds use 'eval'
   devtool: 'source-map',
   debug: true,
 
-  entry: { 'polyfills': './src/polyfills.ts', 'main': './src/main.ts' },
+  entry: {
+    'polyfills': './src/polyfills.ts',
+    'vendor': './src/vendor.ts',
+    'app': './src/main.ts'
+  },
 
-  // Config for our build files
   output: {
     path: 'dist',
     filename: '[name].bundle.js',
@@ -50,18 +51,14 @@ module.exports = {
       // Support Angular 2 async routes via .async.ts
       { test: /\.async\.ts$/, loaders: ['es6-promise-loader', 'ts-loader'], exclude: [ /\.(spec|e2e)\.ts$/ ] },
 
-      // Support for .ts files.
       { test: /\.ts$/, loader: 'ts-loader', exclude: [ /\.(spec|e2e|async)\.ts$/ ] },
 
       { test: /\.scss$/,  loaders: ["style", "css", "sass"] },
 
-      // Support for *.json files.
       { test: /\.json$/,  loader: 'json-loader' },
 
-      // Support for CSS as raw text
       { test: /\.css$/,   loader: 'raw-loader' },
 
-      // support for .html as raw text
       { test: /\.html$/,  loader: 'raw-loader', exclude: [ 'src/index.html' ] },
 
       {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader?mimetype=image/svg+xml'},
