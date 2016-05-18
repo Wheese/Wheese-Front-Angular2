@@ -1,0 +1,42 @@
+@import "../../App.scss";
+
+.app-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 80px;
+  color: $color-3;
+  background-color: $color-1;
+
+  @include media-breakpoint-up(lg) {
+    height: 80px;
+  }
+
+}
+
+.app-navbar{
+
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+
+  a, input[type="search"] {
+    display: block;
+    font-size: 1.6rem;
+    padding: 0 2em 0 1em;
+    line-height: 50px;
+    color: $color-3;
+    border-bottom: 1px solid $color-1;
+  }
+
+  a.router-link-active {
+    color: $color-2;
+  }
+}
+
+.app-center{
+  vertical-align: middle;
+}

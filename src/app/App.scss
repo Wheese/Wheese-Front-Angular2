@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+@import "~bootstrap/scss/bootstrap-flex";
+
+$font-family-base: 'Raleway', sans-serif;
+
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+$color-1: #000A26; // Tuna
+$color-2: #dd85ac; // Shocking
+$color-3: #ffffff; // White
+$color-4: #0654F4; // Chambray
+
+$color-green: #20aa30;
+$color-red: #aa2030;
+
+/*
+* ============================
+*          BODY
+* ============================
+*/
+
+body {
+  font: {
+    size: 1.6rem;
+    family: $font-family-base;
+  }
+  color: $color-1;
+  background-color: $color-1;
+}
+
+.app-main{
+  display: flex;
+  background-color: $color-4;
+  height: calc(100vh - 50px);
+
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 80px);
+  }
+}
