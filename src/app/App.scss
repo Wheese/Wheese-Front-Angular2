@@ -6,9 +6,9 @@ $font-family-base: 'Raleway', sans-serif;
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 
-$color-1: #000A26; // Tuna
+$color-1: #ffffff; // Tuna
 $color-2: #dd85ac; // Shocking
-$color-3: #ffffff; // White
+$color-3: #182e6e; // White
 $color-4: #0654F4; // Chambray
 
 $color-green: #20aa30;
@@ -25,7 +25,7 @@ body {
     size: 1.6rem;
     family: $font-family-base;
   }
-  color: $color-1;
+  color: $color-3;
   background-color: $color-1;
 }
 
