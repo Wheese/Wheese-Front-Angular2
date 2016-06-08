@@ -10,12 +10,25 @@ import './App.scss';
     template: `
       <header>
         <h1>Wheese</h1>
+        <nav>
+          <a href="#" active>Home</a>
+          <a href="#">Cheese</a>
+          <a href="#">About</a>
+        </nav>
       </header>
 
       <div class="main">
         <div class="fromage">
           Crottin de Chavignol
           <img src="http://www.pleinchamp.com/var/ca_pleinchamp/storage/images/media/images/il-faut-en-moyenne-0-7-litre-de-lait-pour-faire-un-crottin-de-chavignol-qui-pese-de-90-grammes-apres-dix-jours-d-affinage-a-60-grammes-quand-il-est-sec.-dr/26328853-1-fre-FR/il-faut-en-moyenne-0-7-litre-de-lait-pour-faire-un-crottin-de-chavignol-qui-pese-de-90-grammes-apres-dix-jours-d-affinage-a-60-grammes-quand-il-est-sec.-dr.jpg" alt="" />
+
+          <div class="note">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
         </div>
 
         <div class="vins">

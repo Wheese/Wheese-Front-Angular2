@@ -25,23 +25,43 @@ body {
 
 header, footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
   background-color: $color-1;
   color: $color-3;
+}
+
+header nav {
+  margin: 0 2rem;
+}
+
+header nav a{
+  text-decoration: none;
+  margin-right: 1rem;
+  color: $color-3;
+}
+
+header nav a:hover, a:active{
+  color: $color-2;
 }
 
 .main {
   display: flex;
   flex-direction: row;
+  padding: 2rem 5rem;
 }
 
 .fromage {
   display: flex;
   flex-direction: column;
+  background-color: $color-2;
 }
 
 .vins {
   display: flex;
   flex-direction: column;
+  background-color: $color-2;
 }
 
 .vin {
