@@ -1,8 +1,9 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {FORM_PROVIDERS} from '@angular/common';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
     selector: 'app-header',
+    directives: [ROUTER_DIRECTIVES],
     template: require('./Header.html'),
     styles: [require("./Header.scss").toString()]
 })
