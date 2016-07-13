@@ -4,7 +4,7 @@ import {FORM_PROVIDERS} from '@angular/common';
 
 import {Home} from './Home/Home.ts';
 
-import './App.scss';
+import './app.style.scss';
 
 @Component({
     selector: 'app',
